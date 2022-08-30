@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0582ca;
+}
+
+.box{
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.box h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    color: #015a96;
+}
+
+input{
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    border: 2px solid rgb(13, 152, 245);
+    border-radius: 6px;
+    outline: none;
+    font-size: 22px;
+}
+
+input::placeholder{
+    font-size: 23px;
+}
+
+#button{
+    width: 155px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 15px;
+    border: 2px solid rgb(20, 139, 258);
+    text-align: center;
+    background: #0c82ee;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#button:active{
+    background: #0c81ee51;
+}
+
+#alert{
+    position: absolute;
+    bottom: 25px;
+    left: 50px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    color: #0582ca;
+    font-weight: 600;
+    transform: translateX(-200%);
+    transition: all 0.5s ease-in-out;
+}
+
+#error_alert{
+      position: absolute;
+    bottom: 25px;
+    left: 50px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    color: #0582ca;
+    font-weight: 600;
+    transform: translateX(-200%);
+    transition: all 0.5s ease-in-out;
+}
+
+.show_alert{
+    transform: translateX(0) !important;
+}
+
+.show_error_alert{
+    transform: translateX(0) !important;
+}
